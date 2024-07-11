@@ -9,12 +9,18 @@
   </head>
   <body>
     <div class="modal">
-      <div class="icon">!</div>
-      <div class="header">Are you sure you want to do that?</div>
-      <button class="close-button">✖</button>
-      <div class="text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Pariatur excepturi id soluta, numquam minima rerum doloremque eveniet aspernatur beatae commodi. Cupiditate recusandae ad repellendus quidem consectetur sequi amet aspernatur cumque!</div>
-      <button class="continue">Continue</button>
-      <button class="cancel">Cancel</button>
+      <div class="container"> <!-- didn't need a container here -->
+        <div class="icon">!</div>
+        <div class="content">
+          <div class="notice">
+            <div class="header">Are you sure you want to do that?</div><!-- should just use this container instead of making "notice container" -->
+            <button class="close-button">✖</button>
+          </div>
+          <div class="text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Pariatur excepturi id soluta, numquam minima rerum doloremque eveniet aspernatur beatae commodi. Cupiditate recusandae ad repellendus quidem consectetur sequi amet aspernatur cumque!</div>
+          <button class="continue">Continue</button>
+          <button class="cancel">Cancel</button>
+        </div><!-- didn't need a container here -->
+      </div>
     </div>
   </body>
 </html>

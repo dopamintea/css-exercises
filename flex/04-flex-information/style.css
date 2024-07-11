@@ -1,5 +1,6 @@
 body {
   font-family: 'Courier New', Courier, monospace;
+  /* should put the text align here */
 }
 
 img {
@@ -10,6 +11,9 @@ img {
 .title {
   font-size: 36px;
   font-weight: 900;
+  display: flex; /* dont need these only margin bottom for 32px*/
+  justify-content: center;
+  padding-bottom: 32px;
 }
 
 /* do not edit this footer */
@@ -23,4 +27,28 @@ img {
   align-items: center;
   justify-content: center;
   background: #eee;
+}
+
+.container{
+  display: flex;
+  justify-content: center;
+  gap: 52px;
+  /* should put the gap 52px here instead of padding 26px at .nested */
+}
+
+.nested{
+  display: flex;
+  flex-direction: column;
+  flex: 0 0 200px; /*use max-width instead*/
+  padding: 26px; /*wrong way to put the gap*/
+
+}
+
+.text{
+  text-align: center;/*dont need this if the text align on body*/
+}
+
+.image{/*doesnt do anything*/
+  display: flex;
+  justify-content: center;
 }

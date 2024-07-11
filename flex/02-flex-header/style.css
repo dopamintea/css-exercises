@@ -1,19 +1,44 @@
 .header  {
   font-family: monospace;
   background: papayawhip;
+  padding: 10px;
+  display: flex;
+  justify-content: space-between;
+  /* align items here instead of ul */
+
 }
 
 .logo {
   font-size: 48px;
   font-weight: 900;
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
   color: tomato;
   background: white;
   padding: 4px 32px;
 }
 
+
+.left-links{
+  display: flex;
+
+}
+
+.right-links{
+  display: flex;
+}
+
+/* didnt need left and right links specificity */
+
 ul {
   /* this removes the dots on the list items*/
+  padding-left: 0%;
   list-style-type: none;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 20px;
+  
+
 }
 
 a {
